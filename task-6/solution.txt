@@ -1,0 +1,5 @@
+#!/bin/bash
+for var in $(find . -name "*.txt");do
+	mainName=$(echo $var | cut -d "/" -f 2)
+	mv "$mainName" "old_$mainName"
+done
