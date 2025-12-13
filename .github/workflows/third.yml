@@ -1,0 +1,12 @@
+name: third work flow 
+on: 
+  push: 
+    branches: 
+      - main 
+jobs: 
+  first_job: 
+    name: this is the first job in the world I HAVE LOVED & I CAN TO ADD A description for it ??? 
+    runs-on: ubuntu-latest 
+    steps: 
+      - uses: actions/checkout@v4 
+      - run: echo "this is a string from third workflow my friend IAM SO HAPPY"  
