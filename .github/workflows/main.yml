@@ -1,0 +1,13 @@
+name: fisrt workflow 
+on: 
+  push: 
+    branches: 
+      - main 
+jobs: 
+  firstJob: 
+    name: first job 
+    runs-on: ubunto-latest
+    steps: 
+    - uses: actions@v3 
+    - run: echo 'hello world ! from the github' 
+  
